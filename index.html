@@ -21,6 +21,9 @@
       background-size: 600% 600%;
       animation: gradientBG 20s ease infinite;
       color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     @keyframes gradientBG {
@@ -51,15 +54,21 @@
     }
 
     footer {
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #fff;
+      background-color: #343a40;
+      color: white;
       text-align: center;
       padding: 20px 0;
+      margin-top: auto;
+    }
+
+    @media (max-width: 767px) {
+      footer {
+        padding: 15px 0;
+      }
     }
   </style>
 </head>
 <body>
-
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -72,205 +81,142 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-         <li class="nav-item">
-  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
-</li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-<section id="home" class="text-white text-center hero-text" style="background: url('path_to_your_image.jpg') no-repeat center center; background-size: cover;">
-  <div class="container">
-    <h1 class="display-4">Buka Peluang Kerjasama & Endorse</h1>
-    <p class="lead">Kami menyediakan platform profesional untuk bisnis, promosi, dan kolaborasi iklan</p>
-    <a href="#" class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
-      <i class="bi bi-envelope"></i> Hubungi Kami
-    </a>
-  </div>
-</section>
+  <section id="home" class="text-white text-center hero-text">
+    <div class="container">
+      <h1 class="display-4">Buka Peluang Kerjasama & Endorse</h1>
+      <p class="lead">Kami menyediakan platform profesional untuk bisnis, promosi, dan kolaborasi iklan</p>
+      <a href="#" class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+        <i class="bi bi-envelope"></i> Hubungi Kami
+      </a>
+    </div>
+  </section>
 
-
-<!-- About Section -->
-<section id="about" class="py-5">
-  <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="text-center">
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
       <h2 class="mb-5">Tentang Kami</h2>
       <p class="lead">
         AkuAghe adalah perusahaan yang bergerak di tiga bidang strategis: produk pertanian, teknologi komputer, dan layanan periklanan digital, yang saling mendukung dalam mewujudkan ekosistem bisnis terpadu di era modern.
       </p>
-    <section id="services" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5 text-white">Layanan Kami</h2>
+    </div>
+  </section>
 
-   <!-- Tim Profesional Section -->
-<section id="team" class="py-5">
-  <div class="container">
-    <h2 class="mb-5 text-center">Tim Profesional</h2>
-    <p class="lead text-center text-md-start">
-      Kami adalah tim yang berfokus pada kepuasan investor dan kolaborasi bisnis berbasis teknologi serta inovasi.
-    </p>
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-white">Layanan Kami</h2>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="mb-5 text-center">Tim Profesional</h2>
+      <p class="lead text-center text-md-start">
+        Kami adalah tim yang berfokus pada kepuasan investor dan kolaborasi bisnis berbasis teknologi serta inovasi.
+      </p>
+    </div>
+  </section>
+
+  <!-- Collaboration Section -->
+  <section id="collaboration" class="py-5 bg-light text-dark">
+    <div class="container">
+      <h2 class="mb-5 text-center">Kerja Sama & Bisnis</h2>
+      <p class="lead text-center text-md-start">
+        Kami terbuka untuk kolaborasi dalam bentuk endorse, promosi, dan kerja sama bisnis lainnya yang saling menguntungkan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Computer Assembly Section -->
+  <section id="computer-assembly" class="py-5">
+    <div class="container">
+      <h2 class="mb-5 text-center">Spesialis Perakitan Komputer</h2>
+      <p class="lead text-center text-md-start">
+        Kami juga melayani perakitan komputer untuk kebutuhan gaming, editing, dan bisnis. Tim kami berpengalaman dalam memilih komponen terbaik sesuai kebutuhan Anda.
+      </p>
+    </div>
+  </section>
+
+  <!-- Online Shop Section -->
+  <section id="online-shop" class="py-5 bg-light text-dark">
+    <div class="container">
+      <h2 class="mb-5 text-center">Toko Online</h2>
+      <p class="lead text-center text-md-start">
+        Kami juga menjual produk pertanian dengan kualitas terbaik, seperti ubi-ubian, untuk memajukan para petani.
+      </p>
+    </div>
+  </section>
+
+  <!-- Social Media -->
+  <div class="text-center mt-4">
+    <h5>Ikuti Kami di Media Sosial</h5>
+    <a href="https://web.facebook.com/AkuAghe" target="_blank" class="btn btn-outline-primary m-1">
+      <i class="bi bi-facebook"></i> Facebook
+    </a>
+    <a href="https://www.instagram.com/one_blackhat" target="_blank" class="btn btn-outline-danger m-1">
+      <i class="bi bi-instagram"></i> Instagram
+    </a>
   </div>
-</section>
 
-<!-- Kerja Sama & Bisnis Section -->
-<section id="collaboration" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="mb-5 text-center">Kerja Sama & Bisnis</h2>
-    <p class="lead text-center text-md-start">
-      Kami terbuka untuk kolaborasi dalam bentuk endorse, promosi, dan kerja sama bisnis lainnya yang saling menguntungkan.
-    </p>
-  </div>
-</section>
-
-<!-- Spesialis Perakitan Komputer Section -->
-<section id="computer-assembly" class="py-5">
-  <div class="container">
-    <h2 class="mb-5 text-center">Spesialis Perakitan Komputer</h2>
-    <p class="lead text-center text-md-start">
-      Kami juga melayani perakitan komputer untuk kebutuhan gaming, editing, dan bisnis. Tim kami berpengalaman dalam memilih komponen terbaik sesuai kebutuhan Anda.
-    </p>
-  </div>
-</section>
-
-<!-- Toko Online Section -->
-<section id="online-shop" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="mb-5 text-center">Toko Online</h2>
-    <p class="lead text-center text-md-start">
-      Kami juga menjual produk pertanian dengan kualitas terbaik, seperti ubi-ubian, untuk memajukan para petani.
-    </p>
-  </div>
-</section>
-
-
-  
   <!-- Modal Contact -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="contactModalLabel">Hubungi Kami</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
-      </div>
-      <div class="modal-body">
-        <form action="https://formspree.io/f/mbloyroy" method="POST">
-          <div class="mb-3">
-            <label for="name" class="form-label">Nama</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Masukkan nama Anda" required />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Masukkan email Anda" required />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Pesan</label>
-            <textarea class="form-control" name="message" id="message" rows="4" placeholder="Tulis pesan Anda" required></textarea>
-          </div>
-          <input type="hidden" name="_next" value="https://github.com/AkuAghe/Agus/blob/main/thanks.html" />
-          <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill"></i> Kirim</button>
-        </form>
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Hubungi Kami</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <form action="https://formspree.io/f/mbloyroy" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Masukkan nama Anda" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Masukkan email Anda" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Pesan</label>
+              <textarea class="form-control" name="message" id="message" rows="4" placeholder="Tulis pesan Anda" required></textarea>
+            </div>
+            <input type="hidden" name="_next" value="https://github.com/AkuAghe/Agus/blob/main/thanks.html" />
+            <button type="submit" class="btn btn-primary"><i class="bi bi-send-fill"></i> Kirim</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-
-  <!-- Social Media Links -->
-    <div class="mt-4 text-center">
-      <h5>Ikuti Kami di Media Sosial</h5>
-      <a href="https://web.facebook.com/AkuAghe" target="_blank" class="btn btn-outline-primary m-1">
-        <i class="bi bi-facebook"></i> Facebook
-      </a>
-      <a href="https://www.instagram.com/one_blackhat" target="_blank" class="btn btn-outline-danger m-1">
-        <i class="bi bi-instagram"></i> Instagram
-      </a>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Website By Agus</p>
+      <p>Pengunjung yang Online: <span id="onlineVisitors">0</span></p>
     </div>
-  </div>
-
-
- <!-- Footer Section -->
-<footer class="bg-dark text-white text-center py-4 mt-auto">
-  <div class="container">
-    <p>&copy; 2025 Website By Agus</p>
-    <p>Pengunjung yang Online: <span id="onlineVisitors">0</span></p>
-  </div>
-</footer>
-
-<!-- Footer Section -->
-<footer class="bg-dark text-white text-center py-4">
-  <div class="container">
-    <p>&copy; 2025 Website By Agus</p>
-    <p>Pengunjung yang Online: <span id="onlineVisitors">0</span></p>
-  </div>
-</footer>
-
-<!-- JavaScript untuk menambah pengunjung online (dummy data) -->
-<script>
-  // Fungsi untuk memperbarui jumlah pengunjung online
-  function updateOnlineVisitors() {
-    // Dummy data - di dunia nyata ini bisa diambil dari back-end
-    const onlineCount = Math.floor(Math.random() * 100) + 1; // Simulasi pengunjung online
-    document.getElementById('onlineVisitors').textContent = onlineCount;
-  }
-
-  // Update pengunjung online setiap 5 detik
-  setInterval(updateOnlineVisitors, 5000);
-  
-  // Panggil langsung di awal untuk menampilkan nilai pertama
-  updateOnlineVisitors();
-</script>
-
-<style>
-  /* Mengatur agar halaman selalu memiliki tinggi 100% */
-  html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Mengatur kontainer utama agar tumbuh memenuhi ruang yang tersedia */
-  .container {
-    flex-grow: 1; /* Kontainer utama akan tumbuh untuk mengisi ruang yang tersedia */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Mengatur agar konten mulai dari atas */
-  }
-
-  /* Styling untuk footer */
-  footer {
-    background-color: #343a40; /* Warna latar belakang footer */
-    color: white;
-    padding: 20px 0; /* Memberikan ruang di dalam footer */
-    text-align: center;
-    width: 100%; /* Memastikan footer memenuhi lebar halaman */
-    position: relative;
-    bottom: 0;
-  }
-
-  /* Memberikan jarak lebih pada bagian bawah agar footer lebih terlihat */
-  .container {
-    padding-bottom: 20px; /* Jarak antara konten dan footer */
-  }
-
-  /* Responsif - Menjaga footer tetap di bawah pada perangkat kecil */
-  footer p {
-    margin: 0;
-  }
-
-  /* Responsif untuk perangkat kecil */
-  @media (max-width: 767px) {
-    footer {
-      padding: 15px 0; /* Mengurangi padding pada perangkat kecil */
-    }
-  }
-</style>
-
-
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Simulasi pengunjung online -->
+  <script>
+    function updateOnlineVisitors() {
+      const onlineCount = Math.floor(Math.random() * 100) + 1;
+      document.getElementById('onlineVisitors').textContent = onlineCount;
+    }
+    setInterval(updateOnlineVisitors, 5000);
+    updateOnlineVisitors();
+  </script>
 </body>
 </html>
