@@ -215,8 +215,8 @@
   </div>
 
 
-  <!-- Footer Section -->
-<footer class="bg-dark text-white text-center py-4">
+ <!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-4 mt-auto">
   <div class="container">
     <p>&copy; 2025 Website By Agus</p>
     <p>Pengunjung yang Online: <span id="onlineVisitors">0</span></p>
@@ -238,6 +238,24 @@
   // Panggil langsung di awal untuk menampilkan nilai pertama
   updateOnlineVisitors();
 </script>
+
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: auto; /* Menjaga footer di bawah konten */
+  }
+</style>
+
 
 
   <!-- Bootstrap JS -->
