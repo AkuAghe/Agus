@@ -131,15 +131,71 @@
   </section>
 
   <!-- Testimoni -->
-  <section class="py-5 text-center">
-    <div class="container">
-      <h2 class="mb-5">Testimoni Klien</h2>
-      <blockquote class="blockquote">
-        <p>"Layanan endorse-nya sangat profesional. Produk kami naik 100% dalam 4 minggu!"</p>
-        <footer class="blockquote-footer">Mitra UMKM dari Malang</footer>
-      </blockquote>
-    </div>
-  </section>
+<section class="py-5 text-center bg-light">
+  <div class="container">
+    <h2 class="mb-5">Testimoni Klien</h2>
+    <blockquote class="blockquote">
+      <p id="testimonial-text" class="fade show">"Layanan endorse-nya sangat profesional. Produk kami naik 100% dalam 4 minggu!"</p>
+      <footer id="testimonial-author" class="blockquote-footer fade show">Mitra UMKM dari Malang</footer>
+    </blockquote>
+  </div>
+</section>
+
+<style>
+  .fade {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .fade.hide {
+    opacity: 0;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const testimonials = [
+      {
+        text: '"Layanan endorse-nya sangat profesional. Produk kami naik 100% dalam 4 minggu!"',
+        author: 'Mitra UMKM dari Malang'
+      },
+      {
+        text: '"Sangat puas! Timnya responsif dan hasil promosi luar biasa."',
+        author: 'Owner Toko Lokal Bandung'
+      },
+      {
+        text: '"Kerjasama bisnis yang transparan dan saling menguntungkan. Kami akan lanjut!"',
+        author: 'Startup Partner Jakarta'
+      },
+      {
+        text: '"Produk lokal kami kini dikenal secara nasional. Terima kasih tim hebat!"',
+        author: 'Komunitas Petani Jawa Timur'
+      }
+    ];
+
+    let index = 0;
+    const textEl = document.getElementById("testimonial-text");
+    const authorEl = document.getElementById("testimonial-author");
+
+    setInterval(() => {
+      // Fade out
+      textEl.classList.add("hide");
+      authorEl.classList.add("hide");
+
+      setTimeout(() => {
+        // Ganti isi teks
+        index = (index + 1) % testimonials.length;
+        textEl.textContent = testimonials[index].text;
+        authorEl.textContent = testimonials[index].author;
+
+        // Fade in
+        textEl.classList.remove("hide");
+        authorEl.classList.remove("hide");
+      }, 500); // waktu transisi
+    }, 5000); // jeda antar testimoni
+  });
+</script>
+
 
  <!-- Kontak -->
 <section id="contact" class="bg-light py-5">
