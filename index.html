@@ -81,14 +81,16 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="text-white text-center hero-text">
-    <div class="container">
-      <h1 class="display-4">Selamat Datang</h1>
-      <p class="lead">Website untuk mengirim kerjasama endrose dengan gaya profesional</p>
-      <a href="#" class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
-              <i class="bi bi-envelope"></i> Hubungi Kami</a>
-    </div>
-  </section>
+<section id="home" class="text-white text-center hero-text" style="background: url('path_to_your_image.jpg') no-repeat center center; background-size: cover;">
+  <div class="container">
+    <h1 class="display-4">Buka Peluang Kerjasama & Endorse</h1>
+    <p class="lead">Kami menyediakan platform profesional untuk bisnis, promosi, dan kolaborasi iklan</p>
+    <a href="#" class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+      <i class="bi bi-envelope"></i> Hubungi Kami
+    </a>
+  </div>
+</section>
+
 
 <!-- About Section -->
 <section id="about" class="py-5">
@@ -102,70 +104,43 @@
   <div class="container">
     <h2 class="text-center mb-5 text-white">Layanan Kami</h2>
 
-    <!-- Tim Profesional -->
-    <div class="row justify-content-center mb-4">
-      <div class="col-lg-8 col-md-10">
-        <div class="card shadow-sm text-center">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="bi bi-people-fill me-2 text-primary"></i>Tim Profesional
-            </h5>
-            <p class="card-text">
-              Kami adalah tim yang berfokus pada kepuasan investor dan kolaborasi bisnis berbasis teknologi serta inovasi.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+   <!-- Tim Profesional Section -->
+<section id="team" class="py-5">
+  <div class="container">
+    <h2 class="mb-5 text-center">Tim Profesional</h2>
+    <p class="lead text-center text-md-start">
+      Kami adalah tim yang berfokus pada kepuasan investor dan kolaborasi bisnis berbasis teknologi serta inovasi.
+    </p>
+  </div>
+</section>
 
-    <!-- Kerja Sama & Bisnis -->
-    <div class="row justify-content-center mb-4">
-      <div class="col-lg-8 col-md-10">
-        <div class="card shadow-sm text-center">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="bi bi-briefcase-fill me-2 text-warning"></i>Kerja Sama & Bisnis
-            </h5>
-            <p class="card-text">
-              Kami terbuka untuk kolaborasi dalam bentuk endorse, promosi, dan kerja sama bisnis lainnya yang saling menguntungkan.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- Kerja Sama & Bisnis Section -->
+<section id="collaboration" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-5 text-center">Kerja Sama & Bisnis</h2>
+    <p class="lead text-center text-md-start">
+      Kami terbuka untuk kolaborasi dalam bentuk endorse, promosi, dan kerja sama bisnis lainnya yang saling menguntungkan.
+    </p>
+  </div>
+</section>
 
-    <!-- Spesialis Perakitan Komputer -->
-    <div class="row justify-content-center mb-4">
-      <div class="col-lg-8 col-md-10">
-        <div class="card shadow-sm text-center">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="bi bi-pc-display me-2 text-success"></i>Spesialis Perakitan Komputer
-            </h5>
-            <p class="card-text">
-              Kami juga melayani perakitan komputer untuk kebutuhan gaming, editing, dan bisnis. Tim kami berpengalaman dalam memilih komponen terbaik sesuai kebutuhan Anda.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- Spesialis Perakitan Komputer Section -->
+<section id="computer-assembly" class="py-5">
+  <div class="container">
+    <h2 class="mb-5 text-center">Spesialis Perakitan Komputer</h2>
+    <p class="lead text-center text-md-start">
+      Kami juga melayani perakitan komputer untuk kebutuhan gaming, editing, dan bisnis. Tim kami berpengalaman dalam memilih komponen terbaik sesuai kebutuhan Anda.
+    </p>
+  </div>
+</section>
 
-    <!-- Toko Online -->
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10">
-        <div class="card shadow-sm text-center">
-          <div class="card-body">
-            <h5 class="card-title">
-              <i class="bi bi-shop me-2 text-primary"></i>Toko Online
-            </h5>
-            <p class="card-text">
-              Kami juga menjual produk pertanian dengan kualitas terbaik, seperti ubi-ubian, untuk memajukan para petani.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<!-- Toko Online Section -->
+<section id="online-shop" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-5 text-center">Toko Online</h2>
+    <p class="lead text-center text-md-start">
+      Kami juga menjual produk pertanian dengan kualitas terbaik, seperti ubi-ubian, untuk memajukan para petani.
+    </p>
   </div>
 </section>
 
@@ -223,6 +198,14 @@
   </div>
 </footer>
 
+<!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>&copy; 2025 Website By Agus</p>
+    <p>Pengunjung yang Online: <span id="onlineVisitors">0</span></p>
+  </div>
+</footer>
+
 <!-- JavaScript untuk menambah pengunjung online (dummy data) -->
 <script>
   // Fungsi untuk memperbarui jumlah pengunjung online
@@ -240,19 +223,48 @@
 </script>
 
 <style>
+  /* Mengatur agar halaman selalu memiliki tinggi 100% */
   html, body {
     height: 100%;
     margin: 0;
-  }
-
-  .container {
-    min-height: 100%;
     display: flex;
     flex-direction: column;
   }
 
+  /* Mengatur kontainer utama agar tumbuh memenuhi ruang yang tersedia */
+  .container {
+    flex-grow: 1; /* Kontainer utama akan tumbuh untuk mengisi ruang yang tersedia */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Mengatur agar konten mulai dari atas */
+  }
+
+  /* Styling untuk footer */
   footer {
-    margin-top: auto; /* Menjaga footer di bawah konten */
+    background-color: #343a40; /* Warna latar belakang footer */
+    color: white;
+    padding: 20px 0; /* Memberikan ruang di dalam footer */
+    text-align: center;
+    width: 100%; /* Memastikan footer memenuhi lebar halaman */
+    position: relative;
+    bottom: 0;
+  }
+
+  /* Memberikan jarak lebih pada bagian bawah agar footer lebih terlihat */
+  .container {
+    padding-bottom: 20px; /* Jarak antara konten dan footer */
+  }
+
+  /* Responsif - Menjaga footer tetap di bawah pada perangkat kecil */
+  footer p {
+    margin: 0;
+  }
+
+  /* Responsif untuk perangkat kecil */
+  @media (max-width: 767px) {
+    footer {
+      padding: 15px 0; /* Mengurangi padding pada perangkat kecil */
+    }
   }
 </style>
 
