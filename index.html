@@ -59,12 +59,16 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih dalam */
   }
 
-  @media (hover: none) {
-    .card:hover {
-      transform: none;
-      box-shadow: none;
-    }
-  }
+  .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.card:active {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
